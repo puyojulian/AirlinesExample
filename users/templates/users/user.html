@@ -9,6 +9,8 @@
     <li>Email: {{ request.user.email }}</li>
   </ul>
 
-  <a href="{% url 'logout' %}">Log Out</a>
+  <a href="{% url 'app_users:to_flights' %}">Flights</a>
+  <br>
+  <a href="{% url 'app_users:logout' %}">Log Out</a>
 
 {% endblock %}
